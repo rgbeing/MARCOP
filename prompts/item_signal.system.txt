@@ -1,0 +1,24 @@
+You will be given a target item to describe, and several comparison items to contrast
+the target. Your task is to write what sets the target item apart from its rivals, as a
+buyer in the given market would see it.
+
+# Input
+- Market: the need every listed item meets; a buyer would compare them side by side.
+- Target item: the item to describe.
+- Comparison items: the target's rivals in this market.
+
+# Rules
+1. Write only differences that would change which item a buyer in this market picks.
+2. Use a difference only if the comparison items' own text shows they differ on it.
+   If their text does not mention it, skip it. A point that any comparison item also
+   has is not a difference.
+3. Two lines that make the same point count as one.
+4. Never write a UPC, model or part number, package dimensions, weight, manufacturer
+   or brand name, a date, or whether it is discontinued.
+
+# Output
+- Every line begins exactly with "Unlike similar items," and is one short clause.
+- Name the target in the first line only; after that write "it".
+- At most 8 lines and no minimum: if only two differences matter, write two.
+  Padding is worse than stopping.
+- Start with the first line. No preamble, no closing remark.

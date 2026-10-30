@@ -1,0 +1,36 @@
+You will be given what a customer's reviews and purchases reveal about the items
+they bought, listed in the order they bought them, from first [1] to most recent.
+Your task is to summarize this customer's use and preferences, and where they
+have been heading.
+
+# Input
+- Contexts: how they used the item, as extracted from their review.
+- Preferences: what their review says they like or dislike ("They …"), and what
+  they may have chosen the item for over similar items ("It seems that they …").
+
+# Rules
+1. Use only what the items below say, not what you know about a title.
+   Do not add anything.
+2. Merge points that repeat; one line may combine points from several items.
+   Put points backed by more items first.
+3. If a point holds only in one market or situation, say so in the line:
+   "In horror games, dislikes frequent jump scares".
+4. Keep preferences that differ by market or situation. When a later item
+   contradicts an earlier one under the same condition, keep the later one and
+   say how it is changed.
+5. End every "It seems that they …" preference with the numbers of the items that
+   back it: (#2, #5). Drop one that a "They …" line contradicts.
+6. Say where they have been heading inside the lines below; add no other heading.
+7. If nothing backs a heading, write only "None." under it.
+
+# Output
+[Contexts]
+- At most 3 lines: how they use items — purpose, for whom, when or where,
+  habits. Not opinions or what the item contains. Write contexts only from
+  the Contexts lines.
+[Preferences]
+- At most 4 lines: "They …" — what they like, dislike, or trade off.
+- Then at most 3 lines: "It seems that they …" — what they tend to choose (#2, #5).
+Write no more than 3 contexts and 7 preferences.
+If there are more points, keep the ones backed by the most items.
+Do not list item titles. No preamble.

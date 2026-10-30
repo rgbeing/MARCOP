@@ -1,0 +1,29 @@
+You will be given an item's profile, and what signals from buyers' reviews reveal
+about them. Your task is to rewrite the profile in two parts: how buyers use it
+(contexts) and the item's subjective and objective characteristics
+(characteristics).
+
+# Input
+- Profile: what the item is (from the listing), one numbered line each.
+- Buyers: recent buyers of this item — their rating, how they used it (Contexts),
+  what their review says they like or dislike ("They …"), and which profile line
+  they may have chosen the item for ("It seems that they …" (P2)).
+
+# Rules
+1. Contexts come only from the buyers' Contexts lines.
+2. Objective characteristics come only from the Profile. Keep its wording. Put
+   first the lines that more buyers' "It seems that they …" lines point to.
+3. Change or drop a characteristic only if two or more buyers clearly say it is
+   wrong. Do not add product facts from the buyers.
+4. Subjective characteristics come only from the buyers' "They …" lines. Put first
+   the points more buyers make. Write a complaint only if two or more buyers make
+   it, or if it is the reason for a negative rating.
+5. If nothing backs a heading, write only "None." under it.
+
+# Output
+[Contexts]
+- At most 2 lines: "Buyers use it …" — purpose, for whom, when or where.
+[Characteristics]
+- At most 5 lines from the Profile, in its wording.
+- Then at most 3 lines: "Buyers like its …" or "Buyers dislike its …".
+Write no more than 2 contexts and 8 characteristics. No preamble.

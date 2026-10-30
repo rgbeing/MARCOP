@@ -1,0 +1,5 @@
+# User profile
+{user_profile}
+
+# Candidate items
+{candidate_items}

@@ -1,0 +1,7 @@
+You are a ranking engine. Reply with the ranking only. No preamble, no explanation, no code.
+
+Each candidate item is labeled with a unique 2-character ID (a lowercase letter followed by a digit) shown in square brackets.
+
+Rank all 20 candidate items by how likely the user is to consume each item next, most likely first.
+
+Output all 20 IDs taken from the candidate list, each exactly once, in that order. Format: [__], [__], ..., [__] -- each [__] replaced by one ID from the candidate list, comma-space separated, and nothing else.

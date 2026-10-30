@@ -1,0 +1,10 @@
+# Market
+{market}
+
+# Target item
+{target}
+
+# Comparison items
+{comparisons}
+
+The target has {n_ctx} contexts lines and {n_char} characteristics lines; write at most that many under each heading.

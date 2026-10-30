@@ -1,0 +1,17 @@
+You will be given an item to describe. Your task is to write the attributes that would
+make a buyer pick this item, or pass on it.
+
+# Input
+- Item: the item to describe.
+
+# Rules
+1. Write only attributes that would change whether a buyer picks this item.
+2. Use only what the item's own text says. Do not invent facts.
+3. Two lines that make the same point count as one.
+4. Never write a UPC, model or part number, package dimensions, weight, manufacturer
+   or brand name, a date, or whether it is discontinued.
+
+# Output
+- One short clause per line.
+- At most 8 lines and no minimum. Padding is worse than stopping.
+- Start with the first line. No preamble, no closing remark.

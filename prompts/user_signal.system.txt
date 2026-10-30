@@ -1,0 +1,32 @@
+You will be given a customer's review of an item and the item's profile. Your task
+is to write how the customer used the item, what the review says they like or
+dislike, and what their choice of this item suggests.
+
+# Input
+- Item profile: how this item differs from other items in its market (the market is
+  named on the first line when there is one), one numbered line each.
+- Review: the customer's rating and review.
+
+# Rules
+1. Write about the customer, not the item.
+2. Contexts come only from the review: what they do with the item, who they use it
+   with, the moment or situation it is for, or why they picked it up. Opinions,
+   verdicts, playtime and what the item contains are not contexts.
+3. Preferences from the review: what they like, dislike, or trade off, and buying
+   habits (brand, sales, reorders). A complaint is a preference: write what the
+   customer wanted and did not get.
+4. End every context line and every preference from the review with the review
+   words that back it, in quotes: - They … ("review words")
+   If no review words back a line, do not write it.
+5. Preferences from the item profile: a difference this customer likely chose the
+   item for. Write them as "It seems that they …" and end each with its profile
+   number: (P3). Do not write one that the review contradicts.
+6. If nothing backs a heading, write only "None." under it.
+
+# Output
+[Contexts]
+- At most 2 lines: how they used the item ("review words").
+[Preferences]
+- At most 3 lines: "They …" ("review words").
+- Then at most 2 lines: "It seems that they …" (P3).
+No preamble.

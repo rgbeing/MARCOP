@@ -1,0 +1,8 @@
+# Market
+{m}
+
+# Target item
+{t}
+
+# Comparison items
+{c}

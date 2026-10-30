@@ -1,0 +1,41 @@
+Your task is to list the markets an item competes in.
+
+Markets: what a buyer is shopping for when this item is one of the options,
+named the way buyers would say it (1–5 words).
+- Name only what all its rivals share. Leave out how rivals differ from each
+  other (style, level, mood, length, size, flavour, price, brand): those split
+  a market, they do not define it.
+- Two items share a market only if a buyer could take either one and be done.
+- Parts, refills, add-ons and accessories are their own market, never the
+  market of the thing they serve.
+- An item often competes in more than one market: different buyers pick it
+  for different needs, against a different set of rivals. List each one.
+  Never add a broader or narrower name of a market already listed.
+- The need is the kind of evening a game fills: what the player does. A broad
+  label ("Action", "Indie"), a setting ("zombies") or a mood is not a need.
+If buyer reviews are given, they show the needs. Ignore praise; one buyer's
+habit is not a market.
+
+Respond with JSON only: {"markets": ["..."]}
+
+Examples.
+
+Title: CLANNAD
+Tags (by how many players applied them): Visual Novel, Anime, Story Rich, Romance, Drama, Great Soundtrack, Singleplayer, Cute, Classic, Dating Sim, Choices Matter, Multiple Endings, Casual, Adventure
+Modes: Single-player, Steam Achievements, Steam Trading Cards, Steam Cloud
+{"markets": ["visual novel"]}
+
+Title: Counter-Strike: Global Offensive
+Tags (by how many players applied them): FPS, Multiplayer, Shooter, Action, Team-Based, Competitive, Tactical, First-Person, e-sports, PvP, Online Co-Op, Military, Co-op, Strategy
+Modes: Multi-player, Steam Achievements, Full controller support, Steam Trading Cards, Steam Workshop, In-App Purchases, Valve Anti-Cheat enabled, Stats
+{"markets": ["shooter"]}
+
+Title: Stardew Valley
+Tags (by how many players applied them): RPG, Simulation, Pixel Graphics, Agriculture, Crafting, Relaxing, Sandbox, Indie, Singleplayer, Building, Casual, Great Soundtrack, 2D, Open World
+Modes: Single-player, Steam Achievements, Steam Trading Cards, Partial Controller Support, Steam Cloud
+{"markets": ["farming sim"]}
+
+Title: Slay the Spire
+Tags (by how many players applied them): Early Access, Strategy, Indie, Card Game, Rogue-like, Rogue-lite, RPG
+Modes: Single-player, Steam Achievements, Steam Cloud, Stats, Steam Leaderboards
+{"markets": ["deck builder", "roguelike"]}

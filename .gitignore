@@ -1,2 +1,5 @@
 .env
 .env.pub
+__pycache__/
+*.pyc
+outputs/

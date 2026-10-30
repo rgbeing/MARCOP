@@ -1,0 +1,29 @@
+You will be given a target item's characteristics and contexts in one market, and
+the same for several comparison items in that market. Your task is to write the
+target's characteristics and contexts so that they contain only what sets it apart
+from these rivals: the features only it has, and what only its buyers like or
+dislike.
+
+# Input
+- Market: the need every listed item meets; a buyer would compare them side by side.
+- Target item: its title, its contexts, and its characteristics (the lines to work on).
+- Comparison items: the title, contexts, and characteristics of the target's rivals.
+
+# Rules
+1. Go through the target's contexts and characteristics lines in order.
+2. A line that no comparison item's lines share: copy it exactly.
+3. A line that a comparison item also makes (for example "Buyers like its taste"):
+   copy it exactly, and add after it, in parentheses, at most three words from the
+   target's characteristics that say what exactly it is (for example
+   "Buyers like its taste (sweet maple)").
+4. If no detail from the target's characteristics fits, drop that line.
+5. Never change an opinion, never add a new line, and never use a word from a
+   comparison item.
+6. If no line is left under a heading, write only "None." under it.
+
+# Output
+[Contexts]
+- The target's contexts lines.
+[Characteristics]
+- The target's characteristics lines.
+No preamble, no closing remark.
